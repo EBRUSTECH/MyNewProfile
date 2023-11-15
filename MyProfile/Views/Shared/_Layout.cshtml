@@ -1,0 +1,75 @@
+﻿<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] </title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+    </noscript>
+
+    <link href="~/css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="~/css/bootstrap.min.css?ver=1.2.0" rel="stylesheet" asp-append-version="true">
+    <link href="~/css/aos.css?ver=1.2.0" rel="stylesheet" asp-append-version="true">
+    <link href="~/css/main.css?ver=1.2.0" rel="stylesheet" asp-append-version="true">
+
+</head>
+<body>
+
+    <header class="d-print-none">
+        <div class="container text-center text-lg-left">
+            <div class="py-3 clearfix">
+                <a class="site-title mb-2 btn" asp-controller="Home" asp-action="Index">Victory Omoyibo</a>
+                <div class="site-nav">
+                    <nav role="navigation">
+                        <ul class="nav justify-content-center">
+
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://linkedin.com/in/victory-omoyibo-184266156" title="Instagram"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Instagram</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://github.com/EBRUSTECH" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+        <div class="container">
+            <div class="my-3">
+                <div class="h4">Victory Omoyibo</div>
+                <div class="footer-nav">
+                    <nav role="navigation">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://linkedin.com/in/victory-omoyibo-184266156" title="Instagram"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Instagram</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://github.com/EBRUSTECH" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="text-small">
+                <div class="mb-1">&copy; All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="~/scripts/aos.js?ver=1.2.0"></script>
+    <script src="~/scripts/main.js?ver=1.2.0"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
